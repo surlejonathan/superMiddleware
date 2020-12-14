@@ -1,10 +1,8 @@
 const express = require("express");
 const router = express.Router();
 
-const blogs = require("./blogs");
-const users = require("./users");
+const middleware = require("./middleware");
 
-router.use("/blogs", blogs);
-router.use("/users", users);
+router.use("/superMiddleware", middleware);
 
 module.exports = router;
